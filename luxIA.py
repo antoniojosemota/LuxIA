@@ -15,8 +15,7 @@ y_encoded = encoder.fit_transform(y)
 
 ## Normalizando dados
 
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
+X_scaled = X / 1000.0
 
 ## Treinando o modelo
 X_train, X_test, y_train, y_test = train_test_split(
